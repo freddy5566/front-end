@@ -1,13 +1,7 @@
 <template>
   <div id="profileColumn">
     <div class="profile__avatar">
-      <v-img
-        max-width="250px"
-        max-height="250px"
-        height="250px"
-        width="250px"
-        :src="avatar.path"
-      />
+      <v-img :src="avatar.path" />
     </div>
     <div class="profile__description">
       <h3>
