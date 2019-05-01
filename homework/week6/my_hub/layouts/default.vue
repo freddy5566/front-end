@@ -29,5 +29,6 @@ export default {
 <style scoped>
 .defalut-style {
   background-color: white;
+  margin-bottom: 20px;
 }
 </style>

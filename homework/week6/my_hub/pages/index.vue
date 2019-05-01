@@ -26,9 +26,6 @@
           :repo="repo.repoName"
         />
       </div>
-      <div class="section-title">
-        <p>10000 contributions in last year</p>
-      </div>
       <div class="activities">
         <div class="activities__images">
           <v-img :src="activities.path" />
@@ -80,12 +77,12 @@
             <span>polydice/iCook-IOS 3 commits</span><br><br>
             <span>Created a pull request in NTUT-NPC/TAT-IOS that received 1 comment</span>
           </div>
-          <div class="contribution__comment">
-            <div class="contribution__description">
-              <span>Feature/setUp login</span><br>
-              <span>LoginViewController store token within touched/foced store account it still looks shitty, but it will be fixed in nearly future</span>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="contribution__comment">
+        <div class="contribution__description">
+          <span>Feature/setUp login</span><br>
+          <span>LoginViewController store token within touched/foced store account it still looks shitty, but it will be fixed in nearly future</span>
         </div>
       </div>
     </div>
@@ -200,10 +197,11 @@ export default {
 }
 
 .activities__strategy {
-  /* border: 1px solid gray; */
+  border: 2px solid gray;
   width: 650px;
   height: 300px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .activities__strategy__buttons {
@@ -228,16 +226,19 @@ export default {
 
 .contribution__block {
   width: 650px;
-  height: 350px;
-  border: 1px solid gray;
+  height: 250px;
+  border: 2px solid gray;
 }
 
 .contribution__description {
   margin-left: 50px;
+  margin-top: 10px;
 }
 
 .contribution__comment {
-  border: 1px solid gray;
-  margin-top: 20px;
+  width: 650px;
+  border: 2px solid gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 </style>
