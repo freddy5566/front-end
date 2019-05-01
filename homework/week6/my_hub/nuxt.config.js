@@ -3,7 +3,7 @@ import pkg from './package'
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/front-end/week6/'
+    base: '/front-end/homework/week6/'
   }
 } : {}
 
