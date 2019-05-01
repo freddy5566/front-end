@@ -1,6 +1,12 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/front-end/week6/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
 
@@ -52,6 +58,10 @@ export default {
   */
   modules: [
   ],
+
+  router: {
+    base: routerBase
+  },
 
   /*
   ** Build configuration
