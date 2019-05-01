@@ -9,6 +9,8 @@
           v-for="(button, index) in navButtons"
           :key="index"
           small
+          depressed
+          flat
         >
           {{ button.buttonName }}
         </v-btn>
@@ -60,6 +62,7 @@
             v-for="(button, index) in activityButtons"
             :key="index"
             small
+            color="primary"
           >
             {{ button.year }}
           </v-btn>
@@ -139,12 +142,13 @@ export default {
 
 <style scoped>
 .grid-box {
-  display: grid;
-  grid-template-columns: 21% 79%;
+  display: flex;
+  justify-content: center;
 }
 
 .profile {
-  margin: 100px;
+  margin-top: 100px;
+  margin-right: 20px;
 }
 
 .personal-section {
@@ -156,13 +160,13 @@ export default {
 .nav__buttons {
   display: flex;
   margin-top: 100px;
-  border: 1px solid black;
+  /* border: 1px solid gray; */
 }
 
 .section-title p {
   font-size: 1.3rem;
   font-weight: 400;
-  border: 1px solid black;
+  /* border: 1px solid gray; */
   margin: 0px;
   padding-left: 15px;
   margin-bottom: 10px;
@@ -192,11 +196,11 @@ export default {
 .activities__buttons {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /* border: 1px solid gray; */
 }
 
 .activities__strategy {
-  border: 1px solid black;
+  /* border: 1px solid gray; */
   width: 650px;
   height: 300px;
   margin-top: 10px;
@@ -204,7 +208,7 @@ export default {
 
 .activities__strategy__buttons {
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid gray; */
 }
 
 .activities__description {
@@ -225,7 +229,7 @@ export default {
 .contribution__block {
   width: 650px;
   height: 350px;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 .contribution__description {
@@ -233,7 +237,7 @@ export default {
 }
 
 .contribution__comment {
-  border: 1px solid black;
+  border: 1px solid gray;
   margin-top: 20px;
 }
 </style>

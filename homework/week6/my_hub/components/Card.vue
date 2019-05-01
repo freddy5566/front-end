@@ -31,9 +31,9 @@ export default {
 <style scoped>
 .card {
   background-color: white;
-  width: 300px;
+  width: 350px;
   height: 100px;
-  border: 1px solid black;
+  border: 1px solid gray;
   padding: 10px;
 }
 
@@ -44,7 +44,7 @@ export default {
 
 .language__text {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid gray;
   height: 20px;
   padding: 0;
   margin-left: 2px;
@@ -56,12 +56,12 @@ export default {
   width: 10px;
   background-color: orange;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid gray;
   margin-top: 5px;
 }
 
 .star {
-  border: 1px solid black;
+  border: 1px solid gray;
   padding: 0px;
   height: 20px;
   margin-left: 2px;

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <toolbar />
-    <nuxt />
+    <nuxt class="defalut-style" />
     <v-footer
       fixed
       app
@@ -25,3 +25,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.defalut-style {
+  background-color: white;
+}
+</style>

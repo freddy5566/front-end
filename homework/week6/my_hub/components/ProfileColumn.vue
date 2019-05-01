@@ -73,14 +73,14 @@ h3 {
 
 p {
   font-size: 1.3rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0px;
 }
 
 #profileColumn {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 250px;
   margin: 0px;
   padding: 0px;
