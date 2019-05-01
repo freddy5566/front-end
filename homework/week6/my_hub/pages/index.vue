@@ -59,7 +59,7 @@
             v-for="(button, index) in activityButtons"
             :key="index"
             small
-            color="primary"
+            :color="button.color"
           >
             {{ button.year }}
           </v-btn>
@@ -122,9 +122,9 @@ export default {
         path: require('@/static/activity-graph.jpg')
       },
       activityButtons: [
-        { year: '2019' },
-        { year: '2018' },
-        { year: '2017' }
+        { year: '2019', color: 'primary' },
+        { year: '2018', color: '' },
+        { year: '2017', color: '' }
       ],
       contributedRepos: [
         { repoName: 'Apple' },
@@ -206,6 +206,7 @@ export default {
 
 .activities__strategy__buttons {
   display: flex;
+  margin-top: 20px;
   /* border: 1px solid gray; */
 }
 
