@@ -7,7 +7,7 @@
       <p class="language__text">
         swift
       </p>
-      <i class="fas fa-star start" />
+      <i class="fas fa-star star" />
       <p class="language__text">
         10000
       </p>
@@ -60,7 +60,7 @@ export default {
   margin-top: 5px;
 }
 
-.start {
+.star {
   border: 1px solid black;
   padding: 0px;
   height: 20px;

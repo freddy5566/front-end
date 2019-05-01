@@ -2,7 +2,7 @@
   <v-toolbar
     dark
     color="black"
-    fixed="true"
+    fixed
   >
     <v-btn icon>
       <v-icon>fab fa-github</v-icon>
@@ -42,7 +42,6 @@ export default {
   name: 'Toolbar',
   data() {
     return {
-      isFixed: true,
       buttons: [
         { name: 'Pull requests' },
         { name: 'Issues' },
