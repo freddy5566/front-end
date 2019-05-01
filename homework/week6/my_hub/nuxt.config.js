@@ -3,7 +3,7 @@ import pkg from './package'
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/front-end/homework/week6/my_hub/'
+    base: '/front-end/homework/week6/dist/'
   }
 } : {}
 
@@ -59,9 +59,7 @@ export default {
   modules: [
   ],
 
-  router: {
-    base: routerBase
-  },
+  ...routerBase,
 
   /*
   ** Build configuration
